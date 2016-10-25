@@ -1,0 +1,23 @@
+<html>
+<body>
+<head>
+
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type=text/css href="{{url_for('static',filename='mainCss.css') }}" />
+        <title>{{titre}}</title>
+</head>
+<div class="titre"><h1>{{titre}}<h1></div><br><br>
+{% set a=0 %}
+{%for i in table%}
+{%set a=a+1%}
+<div class="titreArticle"><h2>{{i[0]}}</h2></div>
+<div class="contenuArticle">{{i[1]}}</div>
+<br><br>
+{%endfor%}
+<form action="/" method="post">
+    <input type="hidden" name="toutvoir" value="0">
+  <input type="submit" value="Tout voir!">
+</form> 
+<a href="/create">o</a>
+</body>
+</html>

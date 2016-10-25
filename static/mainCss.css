@@ -1,0 +1,24 @@
+.titre {
+	text-align: center;
+	background-color: #758FCC;
+	width: 300px;
+	margin: auto;
+	
+}
+
+.titreArticle {
+	background-color: #FFFFFF;	
+	text-align: center;
+	width: auto;
+	margin: auto;
+}
+
+.contenuArticle {
+	background-color: #8AA5E5;
+}
+
+
+
+body {
+	background-color: #18326D;
+}
