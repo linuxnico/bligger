@@ -2,7 +2,6 @@
 #-*- coding: utf-8 -*-
 from werkzeug.contrib.jsrouting import render_template
 from flask.templating import render_template_string
-from crypt import methods
 import time
 
 fichier="articles.txt"
@@ -92,9 +91,6 @@ def creer():
         else: session.pop('name')
     return render_template('form.html')
 
-@app.route("/login") #,methods=["GET","POST"])
-def login():
-    return render_template('form.html')
 
 
 
